@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category>71f2c4859707211066deb296f053afa3</category>
+        <channels/>
+        <connect_queue/>
+        <description>Topic allows users to view their open NeedIt Records</description>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{
+  "graph_api_version": "1.0.41",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "8f8e8391d86a41eb8dd14e9b923afc30": {
+          "id": "8f8e8391d86a41eb8dd14e9b923afc30",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "cf772f9d7f8f489caadf49da4a42d485": {
+          "id": "cf772f9d7f8f489caadf49da4a42d485",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "0bb7b7a7e520414991c093b83f990b93",
+          "edgeType": "Edge",
+          "source": "8f8e8391d86a41eb8dd14e9b923afc30",
+          "target": "cf772f9d7f8f489caadf49da4a42d485",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "432363b61778493c8dd55ba01709f4fc": {
+      "id": "432363b61778493c8dd55ba01709f4fc",
+      "name": "LiveAgent_application",
+      "value": {
+        "mode": "simple",
+        "value": null
+      },
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    }
+  }
+}</graph>
+        <key_phrases>View Open NeedIt Records,Needit Request,need something</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <name>View Open NeedIt Records</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-24 18:07:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>399404459707211066deb296f053afdc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>View Open NeedIt Records</sys_name>
+        <sys_package display_value="NeedIt Virtual Agent Coversations" source="x_1057971_needit_v">d2c2804197c3211066deb296f053afdb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt Virtual Agent Coversations">d2c2804197c3211066deb296f053afdb</sys_scope>
+        <sys_update_name>sys_cb_topic_399404459707211066deb296f053afdc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-24 18:08:32</sys_updated_on>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=399404459707211066deb296f053afdc"/>
+</record_update>
